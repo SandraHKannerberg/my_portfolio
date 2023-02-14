@@ -169,5 +169,23 @@
 
         }
     }
+
+    .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 18rem;
+        .name{
+            font-size: 3rem;
+            span{
+                color: var(--color-secondary);
+            }
+        }
+        p{
+            margin: 1.5rem;
+            line-height: 2rem;
+        }
+
+    }
   }
   
