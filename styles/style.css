@@ -21,5 +21,30 @@
 }
 
 body {
+  background-color: var(--color-primary);
   font-family: 'Poppins', sans-serif;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all .4s ease-in-out;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+header {
+  height: 100vh;
+  color: var(--color-white);
+  overflow: hidden; /*In case something overflows*/
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
+}
