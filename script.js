@@ -11,6 +11,8 @@ function pageTransitions(){
             let currentBtn = document.querySelectorAll('.active-btn');
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
             this.className += ' active-btn';
+            //TO DO: active class ska enbart bytas när man klickar på en nav-knapp inte vid reload.
+            //Hur fixar man det??
         })
     }
 
