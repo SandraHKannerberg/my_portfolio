@@ -211,6 +211,10 @@ section {
   margin: 1.5rem;
   line-height: 2rem;
 }
+.header-content .right-header span {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
 
 /*about-content*/
 .about-container {
@@ -264,6 +268,10 @@ section {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
+}
+.about-container .left-about i {
+  color: var(--color-secondary);
+  font-size: 30px;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
