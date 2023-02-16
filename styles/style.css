@@ -223,6 +223,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
   width: 35%;
 }
 .about-container .right-about h4 {
@@ -346,11 +348,12 @@ section {
 }
 .stat-title::before {
   content: "";
+  position: absolute;
   left: 50%;
   top: 0;
   width: 40%;
   height: 1px;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-secondary);
   transform: translateX(-50%);
 }
 
