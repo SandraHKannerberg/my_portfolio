@@ -267,3 +267,100 @@
     }
   }
 }
+
+.about-stats{
+  padding-bottom: 4rem;
+  .progress-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    .progress-bar{
+      display: flex;
+      flex-direction: column;
+      .prog-title{
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .progress-container{
+        display: flex;
+        align-items: center;
+        /*Skills div for illustrate knowledge of 100% */
+        .progress{
+          width: 100%;
+          height: .45rem;
+          background-color: var(--color-grey-4);
+          margin-left: 1rem;
+          position: relative;
+
+          /*Different color to illustrate my knowledge for each skills*/
+          span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: var(--color-secondary);
+            transition: all .4s ease-in-out;
+          }
+          /*Knowledge % for each skill*/
+          .visualstudiocode{
+            width: 65%;
+          }
+
+          .html{
+            width: 65%;
+          }
+
+          .css{
+            width: 60%;
+          }
+
+          .github{
+            width: 65%;
+          }
+
+          .javascript{
+            width: 55%;
+          }
+
+          .nodejs{
+            width: 45%;
+          }
+
+          .mongodb{
+            width: 45%;
+          }
+
+          .php{
+            width: 15%;
+          }
+
+          .typescript{
+            width: 10%;
+          }
+
+          .scss{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.stat-title{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+  &::before{
+    content: '';
+    left: 50%;
+    top: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--color-grey-5);
+    transform: translateX(-50%);
+  }
+
+}
