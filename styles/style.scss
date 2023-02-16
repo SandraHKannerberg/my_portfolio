@@ -383,6 +383,7 @@
       height: 300px;
       object-fit: cover;
       border-radius: 15px;
+      box-shadow: var(--color-secondary) 0px 5px 15px;
     }
     .hover-item{
       width: 100%;
@@ -450,18 +451,14 @@
     width: 250px;
     border-radius: 15px;
   }
-  img{/*TO DO: spara om bilden som gråskala och ta bort filtret så att bilden är svartvit med rosa border. Gör ev. större box-shadow med rosa effekt*/
+  img{
       width: 100%;
       height: 100%;
       object-fit: cover;
       border: 1px solid var(--color-secondary);
       border-radius: 15px;
       transition: all .4s ease-in-out;
-      box-shadow: var(--box-shadow-1);
-      filter: grayscale(100%);
-      &:hover{
-        filter: grayscale(0);
-    }
+      box-shadow: var(--color-secondary) 0px 5px 15px;
   }
 }
 
