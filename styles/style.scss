@@ -90,7 +90,7 @@
     }
   }
   
-  /*Controlls*/
+  /*Controlls / navigation*/
   .controlls{
     position: fixed;
     z-index: 10;
@@ -128,65 +128,6 @@
       }
   }
 
-  /*header-content*/
-  .header-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-    .left-header{
-        display: flex;
-        align-items: center;
-        position: relative;
-        .h-shape{
-            transition: all .4s ease-in-out;
-            width: 65%;
-            height: 100%;
-            background-color: var(--color-secondary);
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-        }
-        .image{
-            border-radius: var(--br-sm-2);
-            height: 90%;
-            width: 68%;
-            margin-left: 4rem;
-            background-color: var(--color-black);
-            transition: all .4s ease-in-out;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all .4s ease-in-out;
-                filter: grayscale(100%);
-                &:hover{
-                    filter: grayscale(0);
-                }
-            }
-
-        }
-    }
-
-    .right-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-right: 18rem;
-        .name{
-            font-size: 3rem;
-            span{
-                color: var(--color-secondary);
-            }
-        }
-        p{
-            margin: 1.5rem;
-            line-height: 2rem;
-        }
-    }
-  }
-  
 /*style for the main-title for every sections*/
 .main-title{
   text-align: center;
@@ -211,6 +152,64 @@
     }
   }
 }
+
+/*header-content*/
+.header-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+    .h-shape{
+          transition: all .4s ease-in-out;
+          width: 65%;
+          height: 100%;
+          background-color: var(--color-secondary);
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1;
+          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+        }
+        .image{
+            border-radius: var(--br-sm-2);
+            height: 90%;
+            width: 68%;
+            margin-left: 4rem;
+            background-color: var(--color-black);
+            transition: all .4s ease-in-out;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .4s ease-in-out;
+                filter: grayscale(100%);
+                &:hover{
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+
+    .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 18rem;
+        .name{
+            font-size: 3rem;
+            span{
+                color: var(--color-secondary);
+            }
+        }
+        p{
+            margin: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+  }
 
 /*about-content*/
 .about-container {
@@ -434,4 +433,37 @@
   opacity: 1;
   transform: scale(1);
 }
+
+/*Contact-section*/
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-contain-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  .image_contact{
+    width: 250px;
+    border-radius: 15px;
+  }
+  img{/*TO DO: spara om bilden som gråskala och ta bort filtret så att bilden är svartvit med rosa border. Gör ev. större box-shadow med rosa effekt*/
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid var(--color-secondary);
+      border-radius: 15px;
+      transition: all .4s ease-in-out;
+      box-shadow: var(--box-shadow-1);
+      filter: grayscale(100%);
+      &:hover{
+        filter: grayscale(0);
+    }
+  }
+}
+
+
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +91,7 @@ section {
   }
 }
 
-/*Controlls*/
+/*Controlls / navigation*/
 .controlls {
   position: fixed;
   z-index: 10;
@@ -126,6 +127,31 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+/*style for the main-title for every sections*/
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%); /*center the text*/
+  font-weight: 800;
+  font-size: 5.3rem;
 }
 
 /*header-content*/
@@ -185,31 +211,6 @@ section {
 .header-content .right-header p {
   margin: 1.5rem;
   line-height: 2rem;
-}
-
-/*style for the main-title for every sections*/
-.main-title {
-  text-align: center;
-}
-.main-title h2 {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 700;
-}
-.main-title h2 span {
-  color: var(--color-secondary);
-}
-.main-title h2 .bg-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: var(--color-grey-5);
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-  transform: translate(-50%, -50%); /*center the text*/
-  font-weight: 800;
-  font-size: 5.3rem;
 }
 
 /*about-content*/
@@ -423,4 +424,36 @@ section {
 .portfolio-item:hover .hover-item {
   opacity: 1;
   transform: scale(1);
+}
+
+/*Contact-section*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-contain-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.contact-contain-container .image_contact {
+  width: 250px;
+  border-radius: 15px;
+}
+.contact-contain-container img { /*TO DO: spara om bilden som gråskala och ta bort filtret så att bilden är svartvit med rosa border. Gör ev. större box-shadow med rosa effekt*/
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid var(--color-secondary);
+  border-radius: 15px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: var(--box-shadow-1);
+  filter: grayscale(100%);
+}
+.contact-contain-container img:hover {
+  filter: grayscale(0);
 }/*# sourceMappingURL=style.css.map */
