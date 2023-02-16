@@ -90,7 +90,7 @@ section {
   }
 }
 
-/*Controlls*/
+/*Controlls / navigation*/
 .controlls {
   position: fixed;
   z-index: 10;
@@ -126,6 +126,31 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+/*style for the main-title for every sections*/
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%); /*center the text*/
+  font-weight: 800;
+  font-size: 5.3rem;
 }
 
 /*header-content*/
@@ -187,31 +212,6 @@ section {
   line-height: 2rem;
 }
 
-/*style for the main-title for every sections*/
-.main-title {
-  text-align: center;
-}
-.main-title h2 {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 700;
-}
-.main-title h2 span {
-  color: var(--color-secondary);
-}
-.main-title h2 .bg-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: var(--color-grey-5);
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-  transform: translate(-50%, -50%); /*center the text*/
-  font-weight: 800;
-  font-size: 5.3rem;
-}
-
 /*about-content*/
 .about-container {
   display: flex;
@@ -223,6 +223,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
   width: 35%;
 }
 .about-container .right-about h4 {
@@ -346,11 +348,12 @@ section {
 }
 .stat-title::before {
   content: "";
+  position: absolute;
   left: 50%;
   top: 0;
   width: 40%;
   height: 1px;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-secondary);
   transform: translateX(-50%);
 }
 
@@ -374,6 +377,7 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
+  box-shadow: var(--color-secondary) 0px 5px 15px;
 }
 .portfolios .portfolio-item .hover-item {
   width: 100%;
@@ -420,4 +424,32 @@ section {
 .portfolio-item:hover .hover-item {
   opacity: 1;
   transform: scale(1);
+}
+
+/*Contact-section*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-contain-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.contact-contain-container .image_contact {
+  width: 250px;
+  border-radius: 15px;
+}
+.contact-contain-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid var(--color-secondary);
+  border-radius: 15px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: var(--color-secondary) 0px 5px 15px;
 }/*# sourceMappingURL=style.css.map */
