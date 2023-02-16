@@ -269,6 +269,10 @@ section {
   padding: 1rem;
   color: var(--color-grey-1);
 }
+.about-container .left-about i {
+  color: var(--color-secondary);
+  font-size: 30px;
+}
 .about-container .left-about h4 {
   font-size: 2rem;
   text-transform: uppercase;
