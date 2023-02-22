@@ -37,7 +37,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden; /*In case something overflows*/
 }
@@ -467,4 +467,45 @@ footer {
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
   box-shadow: var(--color-secondary) 0px 5px 15px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem !important;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controlls .controll {
+    margin: 1rem 0.3rem;
+  }
 }/*# sourceMappingURL=style.css.map */

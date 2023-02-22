@@ -37,7 +37,7 @@
   }
   
   header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden; /*In case something overflows*/
   }
@@ -476,6 +476,8 @@
       box-shadow: var(--color-secondary) 0px 5px 15px;
   }
 }
+
+@import './media';
 
 
 
