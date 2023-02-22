@@ -448,8 +448,24 @@ footer {
     font-size: 1.5rem !important;
   }
 }
+@media screen and (max-width: 1145px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .progress-bars {
+    grid-template-columns: 1fr !important;
+  }
+}
 @media screen and (max-width: 950px) {
   .portfolios {
+    grid-template-columns: 1fr;
+  }
+  .progress-bars {
     grid-template-columns: 1fr;
   }
 }
