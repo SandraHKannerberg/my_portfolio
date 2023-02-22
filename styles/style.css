@@ -406,6 +406,12 @@ footer {
   align-items: center;
   gap: 3rem;
 }
+.contact-contain-container p {
+  color: var(--color-secondary);
+}
+.contact-contain-container a {
+  color: var(--color-secondary);
+}
 .contact-contain-container .image_contact {
   width: 250px;
   border-radius: 15px;
@@ -437,6 +443,11 @@ footer {
 @media screen and (max-width: 950px) {
   .portfolios {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 890px) {
+  .contact-contain-container {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 600px) {
