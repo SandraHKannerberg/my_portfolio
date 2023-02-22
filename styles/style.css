@@ -174,7 +174,7 @@ footer {
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
   width: 65%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--color-secondary);
   position: absolute;
   left: 0;
@@ -225,88 +225,38 @@ footer {
 
 /*about-content*/
 .about-container {
+  width: 95%;
   display: flex;
-  justify-content: flex-start;
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
 .about-container .right-about {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  width: 35%;
 }
 .about-container .right-about h4 {
   font-size: 2rem;
   text-transform: uppercase;
 }
-.about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
-  border-radius: 5px;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-container .right-about .about-item:hover {
-  cursor: default;
-  transform: translateY(-5px);
-  border: 1px solid var(--color-secondary);
-  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-}
-.about-container .right-about .about-item .abt-text {
-  padding: 1.5rem;
-}
-.about-container .right-about .about-item .abt-text .large-text {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-.about-container .left-about {
-  width: 65%;
-  padding-right: 5rem;
-}
-.about-container .left-about p {
-  line-height: 2rem;
-  padding: 1rem;
-  color: var(--color-grey-1);
-}
-.about-container .left-about i {
-  color: var(--color-secondary);
-  font-size: 30px;
-}
-.about-container .left-about h4 {
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-.about-stats {
-  padding-bottom: 4rem;
-}
-.about-stats .progress-bars {
+.about-container .right-about .progress-bars {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
-.about-stats .progress-bars .progress-bar {
+.about-container .right-about .progress-bars .progress-bar {
   display: flex;
   flex-direction: column;
 }
-.about-stats .progress-bars .progress-bar .prog-title {
+.about-container .right-about .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
   font-weight: 500;
 }
-.about-stats .progress-bars .progress-bar .progress-container {
+.about-container .right-about .progress-bars .progress-bar .progress-container {
   display: flex;
   align-items: center;
   /*Skills div for illustrate knowledge of 100% */
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress {
   width: 100%;
   height: 0.45rem;
   background-color: var(--color-grey-4);
@@ -315,7 +265,7 @@ footer {
   /*Different color to illustrate my knowledge for each skills*/
   /*Knowledge % for each skill*/
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress span {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress span {
   position: absolute;
   top: 0;
   left: 0;
@@ -323,55 +273,56 @@ footer {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .visualstudiocode {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .visualstudiocode {
   width: 65%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .html {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .html {
   width: 65%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .css {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .css {
   width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .github {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .github {
   width: 65%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .javascript {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .javascript {
   width: 55%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .nodejs {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .nodejs {
   width: 45%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .mongodb {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .mongodb {
   width: 45%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .php {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .php {
   width: 15%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .typescript {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .typescript {
   width: 10%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .scss {
+.about-container .right-about .progress-bars .progress-bar .progress-container .progress .scss {
   width: 50%;
 }
 
-.stat-title {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 3.5rem 0;
-  position: relative;
+.left-about {
+  width: 65%;
+  padding-right: 5rem;
 }
-.stat-title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 40%;
-  height: 1px;
-  background-color: var(--color-secondary);
-  transform: translateX(-50%);
+.left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+}
+.left-about i {
+  color: var(--color-secondary);
+  font-size: 30px;
+}
+.left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
+/*portfolio-content*/
 .portfolio-text {
   padding: 2rem 0;
   text-align: center;
@@ -382,6 +333,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 3rem;
+  min-width: 95%;
 }
 .portfolios .portfolio-item {
   position: relative;
@@ -469,7 +421,39 @@ footer {
   box-shadow: var(--color-secondary) 0px 5px 15px;
 }
 
+@media screen and (max-width: 1315px) {
+  .hover-heading {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .portfolios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hover-heading {
+    font-size: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .portfolios {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 600px) {
+  /*navbar / meny*/
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controlls .controll {
+    margin: 1rem 0.3rem;
+  }
   /*frontpage*/
   header {
     padding: 0;
@@ -495,35 +479,5 @@ footer {
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
-  }
-  /*About section*/
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-  .about-container .right-about {
-    grid-template-columns: 1fr;
-    padding-top: 2.5rem;
-  }
-  .about-container .left-about {
-    padding-right: 0;
-  }
-  .about-container .left-about p {
-    padding-left: 0;
-  }
-  .section {
-    padding: 2rem 2.5rem;
-  }
-  .controlls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controlls .controll {
-    margin: 1rem 0.3rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,42 @@
+@media screen and (max-width: 1315px){
+    .hover-heading{
+          font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hover-heading{
+        font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 950px){
+    .portfolios{
+        grid-template-columns: 1fr;
+    }
+}
+
+
 @media screen and (max-width: 600px){
+
+    /*navbar / meny*/
+    .controlls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .controll{
+            margin: 1rem .3rem;
+        }
+    }
+
     /*frontpage*/
     header{
         padding: 0;
@@ -32,41 +70,5 @@
         margin: 0 auto;
         width: 90%;
     }
-
-    /*About section*/
-    .about-container{
-        grid-template-columns: 1fr;
-        .right-about{
-            grid-template-columns: 1fr;
-            padding-top: 2.5rem;
-        }
-        .left-about{
-            padding-right: 0;
-            p{
-                padding-left: 0;
-            }
-        }
-    }
-
-    .section{
-        padding: 2rem 2.5rem;
-    }
-
-
-    .controlls{
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--color-grey-5);
-        .controll{
-            margin: 1rem .3rem;
-        }
-    }
-
-   
 
 }
