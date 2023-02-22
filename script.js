@@ -5,33 +5,33 @@ const allSections = document.querySelector('.main-content');
 
 
 function pageTransitions(){
-    //Button click active-class
+    //Färg effekt på den knapp man trycker på med hjälp av active-btn class.
     for(let i = 0; i < sectBtn.length; i++) {
         sectBtn[i].addEventListener('click', function() {
             let currentBtn = document.querySelectorAll('.active-btn');
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
             this.className += ' active-btn';
-            //TO DO: active class ska enbart bytas när man klickar på en nav-knapp inte vid reload.
-            //Hur fixar man det??
         })
     }
 
-    //Section active-class
+    //Växlar mellan sektionerna. Den som har active är display block, överiga display none
+    //TO DO: active class ska enbart bytas när man klickar på en nav-knapp inte vid reload.
+    //Hur fixar man det??
     allSections.addEventListener('click', (e) => {
         const id = e.target.dataset.id;
         if(id){
-            //remove selected from the other btns
+            //Färg på aktuell knapp man har valt
             sectBtns.forEach ((btn) => {
                 btn.classList.remove('active')
             })
             e.target.classList.add('active')
 
-            //hide other sections
+            //Göm de andra sektionerna
             sections.forEach((section)=>{
                 section.classList.remove('active')
             })
 
-            //connect to the id that was set in index.html
+            //Koppla ihop med id som är angivet i index.html
             const element = document.getElementById(id);
             element.classList.add('active');
         }
