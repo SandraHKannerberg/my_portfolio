@@ -1,4 +1,5 @@
 @media screen and (max-width: 600px){
+    /*frontpage*/
     header{
         padding: 0;
     }
@@ -32,6 +33,26 @@
         width: 90%;
     }
 
+    /*About section*/
+    .about-container{
+        grid-template-columns: 1fr;
+        .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .left-about{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .section{
+        padding: 2rem 2.5rem;
+    }
+
+
     .controlls{
         top: auto;
         bottom: 0;
@@ -45,4 +66,7 @@
             margin: 1rem .3rem;
         }
     }
+
+   
+
 }

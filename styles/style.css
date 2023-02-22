@@ -164,7 +164,7 @@ footer {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  height: 100vh;
 }
 .header-content .left-header {
   display: flex;
@@ -174,7 +174,7 @@ footer {
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
   width: 65%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--color-secondary);
   position: absolute;
   left: 0;
@@ -470,6 +470,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  /*frontpage*/
   header {
     padding: 0;
   }
@@ -494,6 +495,23 @@ footer {
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+  }
+  /*About section*/
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  .section {
+    padding: 2rem 2.5rem;
   }
   .controlls {
     top: auto;
