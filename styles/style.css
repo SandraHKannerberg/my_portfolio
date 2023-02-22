@@ -225,8 +225,6 @@ footer {
 
 /*about-content*/
 .about-container {
-  width: 95%;
-  display: flex;
   padding-top: 3.5rem;
   padding-bottom: 5rem;
   display: grid;
@@ -435,6 +433,14 @@ footer {
   box-shadow: var(--color-secondary) 0px 5px 15px;
 }
 
+@media screen and (max-width: 1390px) {
+  .right-header {
+    padding-right: 8rem !important;
+  }
+  .right-header .name {
+    font-size: 1.6rem !important;
+  }
+}
 @media screen and (max-width: 1315px) {
   .hover-heading {
     font-size: 1rem !important;
@@ -474,21 +480,7 @@ footer {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 600px) {
-  /*navbar / meny*/
-  .controlls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controlls .controll {
-    margin: 1rem 0.3rem;
-  }
+@media screen and (max-width: 800px) {
   /*frontpage*/
   header {
     padding: 0;
@@ -508,11 +500,24 @@ footer {
     width: 90%;
     margin: 0 auto;
   }
-  .right-header .name {
-    font-size: 2.5rem !important;
-  }
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*navbar / meny*/
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controlls .controll {
+    margin: 1rem 0.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
