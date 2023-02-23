@@ -2,13 +2,20 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controlls');//parent
 const sectBtn = document.querySelectorAll('.controll');//child
 const allSections = document.querySelector('.main-content');
+const home = document.querySelector("#home");
+const homeBtn = document.querySelector(".controll-1");
 
 function init(){
-    const showSection = document.getElementById(localStorage.getItem('showSection'));
-    showSection.classList.add('active');
+    if(!localStorage.getItem('showSection')){
+        home.classList.add('active');
+        homeBtn.classList.add('active-btn');
+    } else {
+        const showSection = document.getElementById(localStorage.getItem('showSection'));
+        showSection.classList.add('active');
 
-    const showButton = document.querySelector(`[data-id=${localStorage.getItem('showButton')}]`);
-    showButton.classList.add('active-btn');
+        const showButton = document.querySelector(`[data-id=${localStorage.getItem('showButton')}]`);
+        showButton.classList.add('active-btn');
+    }
 }
 
 init();
