@@ -32,9 +32,6 @@
     .about-container{
         grid-template-columns: 1fr;
     }
-    .hide{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 1050px){
@@ -78,25 +75,24 @@
         padding-top: 3rem;
     }
 
-    header .right-header{
-        padding: 2rem !important;
-    }
-
     .header-content{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }
 
-    .left-header{
-        .h-shape{
-            display: none;
-        }
+    .right-header{
+        display: none !important;
     }
 
-    .right-header{
-        grid-row: 1;
-        width: 90%;
-        margin: 0 auto;
+    .responsive-header{
+        display: block !important;
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        margin-left: 1rem;
+        .name{
+            font-size: 1.5rem !important;
+        }
     }
 
     .header-content .left-header .image{
@@ -105,7 +101,7 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 630px){
 
     /*navbar / meny*/
     .controlls{
