@@ -164,7 +164,7 @@ footer {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
+  min-height: 100vh;
 }
 .header-content .left-header {
   display: flex;
@@ -227,14 +227,11 @@ footer {
 .about-container {
   padding-top: 3.5rem;
   padding-bottom: 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
 }
 .about-container h4 {
-  font-size: 1.25rem;
   text-transform: uppercase;
-  text-decoration: underline;
+  font-size: 2rem;
+  color: var(--color-secondary);
 }
 .about-container i {
   font-size: 2.5rem;
@@ -412,7 +409,7 @@ footer {
   align-items: center;
   gap: 3rem;
 }
-.contact-contain-container p {
+.contact-contain-container .pink-text {
   color: var(--color-secondary);
 }
 .contact-contain-container a {
@@ -433,6 +430,11 @@ footer {
   box-shadow: var(--color-secondary) 0px 5px 15px;
 }
 
+@media screen and (max-width: 1430px) {
+  .bg-text {
+    font-size: 3rem !important;
+  }
+}
 @media screen and (max-width: 1390px) {
   .right-header {
     padding-right: 8rem !important;
@@ -466,11 +468,17 @@ footer {
   .progress-bars {
     grid-template-columns: 1fr !important;
   }
+  .sec2 {
+    padding: 2rem 8rem !important;
+  }
+  .sec3 {
+    padding: 2rem 8rem !important;
+  }
+  h2 {
+    font-size: 2.5rem !important;
+  }
 }
 @media screen and (max-width: 950px) {
-  .portfolios {
-    grid-template-columns: 1fr;
-  }
   .progress-bars {
     grid-template-columns: 1fr;
   }
@@ -481,9 +489,12 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
-  /*frontpage*/
+  .bg-text {
+    font-size: 2rem !important;
+  }
   header {
     padding: 0;
+    padding-top: 3rem;
   }
   header .right-header {
     padding: 2rem !important;
@@ -519,5 +530,31 @@ footer {
   }
   .controlls .controll {
     margin: 1rem 0.3rem;
+  }
+  .sec2 {
+    padding: 2rem 5rem !important;
+  }
+  .sec4 {
+    padding: 2rem 5rem !important;
+  }
+  .portfolios {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section {
+    padding: 2rem 3rem !important;
+  }
+  p {
+    font-size: 12px;
+  }
+  i {
+    font-size: 12px;
+  }
+  a {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
