@@ -7,12 +7,8 @@ function init(){
     const showSection = document.getElementById(localStorage.getItem('showSection'));
     showSection.classList.add('active');
 
-   
-
-
-
-    //showButton.classList.add('active-btn');
-
+    const showButton = document.querySelector(`[data-id=${localStorage.getItem('showButton')}]`);
+    showButton.classList.add('active-btn');
 }
 
 init();
