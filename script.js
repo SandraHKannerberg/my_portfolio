@@ -4,8 +4,15 @@ const sectBtn = document.querySelectorAll('.controll');//child
 const allSections = document.querySelector('.main-content');
 
 function init(){
-    const element = document.getElementById(localStorage.getItem('showSection'));
-    element.classList.add('active');
+    const showSection = document.getElementById(localStorage.getItem('showSection'));
+    showSection.classList.add('active');
+
+   
+
+
+
+    //showButton.classList.add('active-btn');
+
 }
 
 init();
@@ -17,12 +24,14 @@ function pageTransitions(){
             let currentBtn = document.querySelectorAll('.active-btn');
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
             this.className += ' active-btn';
+            localStorage.setItem('showButton', sectBtn[i].dataset.id);
         })
     }
 
     //Växlar mellan sektionerna. Den som har active är display block, överiga display none
     allSections.addEventListener('click', (e) => {
         const id = e.target.dataset.id;
+        console.log(id);
         if(id){
 
             sectBtns.forEach ((btn) => {
