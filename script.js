@@ -3,7 +3,6 @@ const sectBtns = document.querySelectorAll('.controlls');//parent
 const sectBtn = document.querySelectorAll('.controll');//child
 const allSections = document.querySelector('.main-content');
 
-
 function pageTransitions(){
     //Färg effekt på den knapp man trycker på med hjälp av active-btn class.
     for(let i = 0; i < sectBtn.length; i++) {
@@ -33,7 +32,9 @@ function pageTransitions(){
 
             //Koppla ihop med id som är angivet i index.html
             const element = document.getElementById(id);
+            console.log(id);
             element.classList.add('active');
+            localStorage.setItem('section', id);
         }
     })
     
