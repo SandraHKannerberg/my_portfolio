@@ -487,6 +487,9 @@ footer {
   .contact-contain-container {
     flex-direction: column;
   }
+  .sec4 {
+    padding: 2rem 5rem !important;
+  }
 }
 @media screen and (max-width: 800px) {
   .bg-text {
@@ -532,9 +535,6 @@ footer {
     margin: 1rem 0.3rem;
   }
   .sec2 {
-    padding: 2rem 5rem !important;
-  }
-  .sec4 {
     padding: 2rem 5rem !important;
   }
   .portfolios {
