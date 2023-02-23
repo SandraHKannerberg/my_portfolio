@@ -1,3 +1,9 @@
+@media screen and (max-width:1430px){
+    .bg-text{
+        font-size: 3rem !important;
+    }
+}
+
 @media screen and (max-width:1390px){
     .right-header{
         padding-right: 8rem !important;
@@ -6,7 +12,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 1315px){
     .hover-heading{
@@ -36,12 +41,18 @@
     .progress-bars{
         grid-template-columns: 1fr !important;
     }
+    .sec2{
+        padding: 2rem 8rem !important;
+    }
+    .sec3{
+        padding: 2rem 8rem !important;
+    }
+    h2{
+        font-size: 2.5rem !important;
+    }
 }
 
 @media screen and (max-width: 950px){
-    .portfolios{
-        grid-template-columns: 1fr;
-    }
     .progress-bars{
         grid-template-columns: 1fr;
     }
@@ -54,9 +65,14 @@
 }
 
 @media screen and (max-width: 800px){
-    /*frontpage*/
+
+    .bg-text{
+        font-size: 2rem !important;
+    }
+
     header{
         padding: 0;
+        padding-top: 3rem;
     }
 
     header .right-header{
@@ -101,5 +117,36 @@
         .controll{
             margin: 1rem .3rem;
         }
+    }
+
+    .sec2{
+        padding: 2rem 5rem !important;
+    }
+
+    .sec4{
+        padding: 2rem 5rem !important;
+    }
+
+    .portfolios{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .section{
+        padding: 2rem 3rem !important;
+    }
+    p{
+        font-size: 12px;
+    }
+    i{
+        font-size: 12px;
+    }
+    a{
+        font-size: 12px;
     }
 }
