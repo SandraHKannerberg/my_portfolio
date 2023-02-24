@@ -5,7 +5,7 @@ const allSections = document.querySelector('.main-content');
 const home = document.querySelector("#home");
 const homeBtn = document.querySelector(".controll-1");
 
-/*Denna funkar i liveserver men inte gitpages
+//Denna funkar i liveserver men inte gitpages
 function init(){
     if(!localStorage.getItem('showSection')){
         home.classList.add('active');
@@ -17,16 +17,16 @@ function init(){
         const showButton = document.querySelector(`[data-id=${localStorage.getItem('showButton')}]`);
         showButton.classList.add('active-btn');
     }
-}*/
+}
 
-function init() {
+/*function init() {
     if (localStorage.getItem("showSection")) {
         pageTransitions();
     } else {
         home.classList.add('active');
         homeBtn.classList.add('active-btn');
     }
-}
+}*/
 
 init();
 
