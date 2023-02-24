@@ -5,7 +5,6 @@ const allSections = document.querySelector('.main-content');
 const home = document.querySelector("#home");
 const homeBtn = document.querySelector(".controll-1");
 
-//Denna funkar i liveserver men inte gitpages
 function init(){
     if(!localStorage.getItem('showSection')){
         home.classList.add('active');
@@ -18,15 +17,6 @@ function init(){
         showButton.classList.add('active-btn');
     }
 }
-
-/*function init() {
-    if (localStorage.getItem("showSection")) {
-        pageTransitions();
-    } else {
-        home.classList.add('active');
-        homeBtn.classList.add('active-btn');
-    }
-}*/
 
 init();
 
@@ -48,7 +38,7 @@ function pageTransitions(){
         if(id){
 
             sectBtns.forEach ((btn) => {
-                btn.classList.remove('active') //Denna fungerar inte. Håller kvar active
+                btn.classList.remove('active')
             })
 
             //Göm de andra sektionerna
@@ -61,7 +51,7 @@ function pageTransitions(){
             const element = document.getElementById(id);
             element.classList.add('active');
 
-            //Spara till localStorage
+            //Sparar till localStorage
             localStorage.setItem('showSection', id);
         }
     })
