@@ -70,14 +70,9 @@
         font-size: 2rem !important;
     }
 
-    header{
-        padding: 0;
-        padding-top: 3rem;
-    }
-
     .header-content{
         grid-template-columns: 1fr;
-        padding-bottom: 6rem;
+        padding: 0;
     }
 
     .right-header{
@@ -102,6 +97,10 @@
 }
 
 @media screen and (max-width: 630px){
+
+    .sec1{
+        padding-bottom: 5rem !important;
+    }
 
     /*navbar / meny*/
     .controlls{
@@ -143,5 +142,21 @@
     }
     a{
         font-size: 12px;
+    }
+    .sec1{
+        padding: 0 !important;
+        padding-bottom: 5rem !important;
+    }
+    .image{
+        height: 95% !important;
+    }
+    img{
+        height: 70% !important;
+    }
+    .header-content{
+        width: 100% !important;
+    }
+    .left-header{
+        width: 100% !important;
     }
 }
