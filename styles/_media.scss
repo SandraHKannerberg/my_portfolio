@@ -150,12 +150,16 @@
     .image{
         height: 95% !important;
     }
-    img{
-        height: 70% !important;
-    }
     .header-content{
         width: 100% !important;
+              .image{
+                width: 90% !important;
+                  img{
+                      height: 70%;
+                  }
+              }
     }
+
     .left-header{
         width: 100% !important;
     }

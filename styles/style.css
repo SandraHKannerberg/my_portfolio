@@ -553,6 +553,7 @@ footer {
   }
   .portfolios {
     grid-template-columns: 1fr;
+    grid-gap: 0.5rem !important;
   }
   footer {
     height: 100px;
@@ -578,11 +579,14 @@ footer {
   .image {
     height: 95% !important;
   }
-  img {
-    height: 70% !important;
-  }
   .header-content {
     width: 100% !important;
+  }
+  .header-content .image {
+    width: 90% !important;
+  }
+  .header-content .image img {
+    height: 70%;
   }
   .left-header {
     width: 100% !important;
