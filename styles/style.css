@@ -382,11 +382,6 @@ footer {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
-.portfolios .portfolio-item .hover-item h3 {
-  font-size: 1.5rem;
-  color: var(--color-white);
-  margin-bottom: 1.5rem;
-}
 .portfolios .portfolio-item .hover-item p {
   text-align: center;
 }
@@ -460,17 +455,9 @@ footer {
     font-size: 1.6rem !important;
   }
 }
-@media screen and (max-width: 1315px) {
-  .hover-heading {
-    font-size: 1rem !important;
-  }
-}
 @media screen and (max-width: 1180px) {
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .hover-heading {
-    font-size: 1.5rem !important;
   }
 }
 @media screen and (max-width: 1145px) {
