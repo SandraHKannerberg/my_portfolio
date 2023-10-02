@@ -318,10 +318,16 @@ footer {
   width: 15%;
 }
 .about-stats .progress-bars .progress-bar .progress-container .progress .typescript {
-  width: 10%;
+  width: 50%;
 }
 .about-stats .progress-bars .progress-bar .progress-container .progress .scss {
   width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress-container .progress .wordpress {
+  width: 45%;
+}
+.about-stats .progress-bars .progress-bar .progress-container .progress .react {
+  width: 55%;
 }
 
 .stat-title {
