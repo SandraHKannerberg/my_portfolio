@@ -371,6 +371,30 @@ footer {
   text-align: center;
 }
 
+.demo-section {
+  display: flex;
+  justify-content: center;
+}
+
+.close-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+
+  i{
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin: 0 1rem;
+  }
+}
+
 .portfolios{
   display: grid;
   grid-template-columns: repeat(3, 1fr);

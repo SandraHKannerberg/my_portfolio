@@ -36,8 +36,8 @@
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span>Sandra</span><br>
-                    Future fullstack developer
+                    Hi there, I'm <span>Sandra</span><br>
+                    Junior fullstack developer
                 </h1>
                 <!-- <p>Looking for an <span>INTERNSHIP</span> during this spring <span>15 WEEKS</span></p> -->
             </div>
@@ -119,8 +119,12 @@
                         <p class="prog-title">⭐ MongoDB / Mongoose</p>
 
                         <p class="prog-title">⭐ API development</p>
+
+                        <p class="prog-title">⭐ GraphQL</p>
                         
                         <p class="prog-title">⭐ MySQL</p>
+
+                        <p class="prog-title">⭐ PostgreSQL</p>
                          
                         <p class="prog-title">⭐ PHP</p>
                                
@@ -137,7 +141,7 @@
                 </div><!--THE END About-stats-->
             </div>
             
-            <footer>Copyright &copy; Sandra Höst Kannerberg 2023</footer>
+            <footer>Copyright &copy; Sandra Höst Kannerberg 2024</footer>
 
         </section><!--this id is connect to the data-id for the controll with the same name-->
 
@@ -147,6 +151,15 @@
                 <h2> <span>My </span>Portfolio<span class="bg-text">My Work </span></h2>
             </div>
             <p class="portfolio-text">Here is some of my work that I've done in various programing languages.</p>
+            
+            <div class="demo-section">
+                <video id="myVideo" controls width="500" style="display: none;">
+                    <source src="assets/Weather-app.mp4" type="video/mp4">
+                </video>
+                <button class="close-button icon" onclick="closeVideo()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+         
+
             <div class="portfolios">
 
                 <!--Each project that I want to show-->
@@ -177,7 +190,26 @@
                     <div class="hover-item">
                         <p>Weather app - React, TypeScript, Bootstrap, Open Weather API</p>
                         <br>
-                        <p>Work in progress, more info soon</p>
+                        <p>Please take a look at the demo</p>
+                        <!-- <div class="icon">
+                            <video controls width="500">
+                                <source src="assets/Weather-app.mp4" type="video/mp4">
+                            </video>
+                            <a href="https://sandrahkannerberg.github.io/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                        </div> -->
+                        <div>
+                            <!-- <div class="icon" id="playButton">
+                                <i class="fa-solid fa-play"></i>
+                            </div> -->
+                            <button class="play-button icon" onclick="toggleVideo()"><i class="fa-solid fa-play"></i></button>
+                            <!-- <div class="icon">
+                                <a href="https://github.com/SandraHKannerberg/weather-app" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div> -->
+                        </div>
                         <!-- <div class="icon">
                             <a href="https://sandrahkannerberg.github.io/snake_game/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
@@ -328,50 +360,30 @@
                 </div>
 
                 <div class="contact-contain-container">
-                    <div class="left-contact">
                         <div class="contact-info">
-                            <p>Thank you for visiting my page. If you have any suggestions or are interested in having me as an intern, please don't hesitate to reach out</p>
+                            <p>Thank you for visiting my portfolio. Please feel free to reach out if you like my works.</p>
                             <br>
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <p>Location</p>   
-                                </div>
+                                <p><i class="fa-solid fa-location-dot"></i> Location</p>   
                                 <p class="pink-text">Remote or Stockholm, Sweden</p>
                             </div>
                             <br>
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <p>E-mail</p> 
-                                </div>
-                                <p class="pink-text">sandra.hostkannerberg@medieinstitutet.se</p>
+                                <p><i class="fa-solid fa-envelope"></i> E-mail</p> 
+                                <p class="pink-text">sandra.hkannerberg@gmail.com</p>
                             </div>
                             <br>
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <p>Mobile</p> 
-                                </div>
+                                <p><i class="fa-solid fa-phone"></i> Mobile</p> 
                                 <p class="pink-text">073-703 64 63</p>
                             </div>
                             <br>
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                    <p>LinkedIn</p>
-                                </div>
+                                <p><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
                                 <a href="https://www.linkedin.com/in/sandra-h%C3%B6st-kannerberg-086a9b7b/" target="_blank">Sandra Höst Kannerberg</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="right-contact">
-                        <div class="image_contact">
-                            <img src="assets/contact_image.jpg" alt="Phone with the text Hello">
-                        </div>
-                    </div>
-                </div>
             </div>
             <footer>Copyright &copy; Sandra Höst Kannerberg 2023</footer>
         </section><!--this id is connect to the data-id for the controll with the same name-->
