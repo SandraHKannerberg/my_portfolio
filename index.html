@@ -39,7 +39,8 @@
                     Hi there, I'm <span>Sandra</span><br>
                     Junior fullstack developer
                 </h1>
-                <!-- <p>Looking for an <span>INTERNSHIP</span> during this spring <span>15 WEEKS</span></p> -->
+                <p>It's time to move from student to working life and I'm now on the lookout for the next step in my <span>developer journey</span> starting from the end of <span>May.</span> If you are hiring or know someone who is, please</br>
+                <span class="controll controll-4" data-id="contact">let's connect!</span></p>
             </div>
         </div>
         
@@ -54,13 +55,15 @@
             <div class="about-container">
                     <h4>Hello, nice to meet you</h4>
                     <p>
-                        I'm a student at Medieinstitutet where I study remotely to become a web developer. 
-                        This is my last year and in May 2024 I will take my degree with the goal of being able to work as a frontend or a fullstack developer.
+                        I'm a graduating fullstack web developer with a passion for crafting user-friendly and innovative websites and apps. 
+                        Throughout my academic journey I have gained experience in both frontend and backend technologies such as 
+                        HTML, CSS, JavaScript, React, NodeJs and I have build several projects with RESTful APIs, 
+                        different types of databases and integrating third-party libraries .
                         <br>
                         <br>
-                        Ever since I was young, designing and creating has always been my thing. I keep an eye 👀 on details and I really think coding is a fun way to be creative.
-                        I discovered the world of coding in a preparatory course and that's when my passion for web development began. It's amazing how the color combinations, 
-                        animations and functionalities made a website come alive.
+                        My interest in coding steams from the combination of creativity and problem solving, and how wide the field is. There is always something new to learn. 
+                        Ever since I was young, designing and creating has always been my thing. I keep an eye 👀 on details and I really think coding is a fun way to be creative. 
+                        It's amazing how the color combinations,animations and functionalities made a website come alive.
                         I'm a passionate and result-driven learner who likes to challenge myself to develop my skills and learn more. I go "all in" in my projects and my stubbornness 
                         and curiosity pushes me very far in not letting go until a task is solved.
                         <br>
@@ -75,13 +78,9 @@
                         ⭐Checkout with Stripe<br>
                         ⭐Livechat with socket.io<br>
                         ⭐Log in pages<br>
-                        ⭐restAPI<br>
+                        ⭐RESTful API<br>
                         <br>
                         I'm convinced that my skills and positive attitude are of great benefit in my professional role as a fullstack developer.
-                        <br>
-                        <br>
-                        Whats next? I'm interested in internship during this spring. It will be the last part of my education.
-                        Take a look at my works and please let me know if you want to talk and get to know me more! Please feel free to contact me if you'd like to connect.
                         <br>
                         <br>
                         Best wishes<br>
@@ -107,6 +106,12 @@
                         <p class="prog-title">⭐ CSS</p>
 
                         <p class="prog-title">⭐ Bootstrap</p>
+
+                        <p class="prog-title">⭐ Material UI</p>
+
+                        <p class="prog-title">⭐ AntDesign</p>
+
+                        <p class="prog-title">⭐ Tailwind</p>
                   
                         <p class="prog-title">⭐ JavaScript</p>
                               
@@ -114,7 +119,9 @@
                      
                         <p class="prog-title">⭐ React</p>
                             
-                        <p class="prog-title">⭐ NodeJs</p>
+                        <p class="prog-title">⭐ NodeJs / Express</p>
+
+                        <p class="prog-title">⭐ Npm</p>
                         
                         <p class="prog-title">⭐ MongoDB / Mongoose</p>
 
@@ -130,7 +137,9 @@
                                
                         <p class="prog-title">⭐ Wordpress</p>
                             
-                        <p class="prog-title">⭐ Quarkus (Java)</p>
+                        <p class="prog-title">⭐ Java (Quarkus)</p>
+
+                        <p class="prog-title">⭐ Docker</p>
 
                             <!-- <div class="progress-bar">
                                 <p class="prog-title">Quarkus (Java)</p>
@@ -150,15 +159,22 @@
             <div class="main-title">
                 <h2> <span>My </span>Portfolio<span class="bg-text">My Work </span></h2>
             </div>
-            <p class="portfolio-text">Here is some of my work that I've done in various programing languages.</p>
+            <p class="portfolio-text">Here I show some of my projects. To see more of my projects please visit my
+               <a href="https://github.com/SandraHKannerberg" target="_"blank>GitHub <i class="fa-brands fa-github"></i></a>  
+            </p>
+           
             
             <div class="demo-section">
                 <video id="myVideo" controls width="500" style="display: none;">
+                    <source src="assets/stripe-checkout.mp4" type="video/mp4">
+                </video>
+                <button id="closeButton" class="close-button icon" style="display: none;" onclick="closeVideo()"><i class="fa-solid fa-xmark"></i></button>
+                
+                <video id="mySecondVideo" controls width="500" style="display: none;">
                     <source src="assets/Weather-app.mp4" type="video/mp4">
                 </video>
-                <button class="close-button icon" onclick="closeVideo()"><i class="fa-solid fa-xmark"></i></button>
+                <button id="closeSecondButton" class="close-button icon" style="display: none;" onclick="closeSecondVideo()"><i class="fa-solid fa-xmark"></i></button>
             </div>
-         
 
             <div class="portfolios">
 
@@ -172,11 +188,13 @@
                     <div class="hover-item">
                         <p>E-commerce Checkout with Stripe, React, TypeScript, AntDesign, NodeJS</p>
                         <br>
-                        <p>Link to GitHub repo below</p>
-                        <div class="icon">
-                            <a href="https://github.com/SandraHKannerberg/stripe-checkout" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
+                        <div class="button-menu">
+                            <button class="play-button icon" onclick="toggleVideo()"><i class="fa-solid fa-play"></i></button>
+                            <div class="icon">
+                                <a href="https://github.com/SandraHKannerberg/stripe-checkout" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,49 +208,14 @@
                     <div class="hover-item">
                         <p>Weather app - React, TypeScript, Bootstrap, Open Weather API</p>
                         <br>
-                        <p>Please take a look at the demo</p>
-                        <!-- <div class="icon">
-                            <video controls width="500">
-                                <source src="assets/Weather-app.mp4" type="video/mp4">
-                            </video>
-                            <a href="https://sandrahkannerberg.github.io/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
-                        </div> -->
-                        <div>
-                            <!-- <div class="icon" id="playButton">
-                                <i class="fa-solid fa-play"></i>
-                            </div> -->
-                            <button class="play-button icon" onclick="toggleVideo()"><i class="fa-solid fa-play"></i></button>
-                            <!-- <div class="icon">
+                        <div class="button-menu">
+                            <button class="play-button icon" onclick="toggleSecondVideo()"><i class="fa-solid fa-play"></i></button>
+                            <div class="icon">
                                 <a href="https://github.com/SandraHKannerberg/weather-app" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                            </div> -->
+                            </div>
                         </div>
-                        <!-- <div class="icon">
-                            <a href="https://sandrahkannerberg.github.io/snake_game/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <!--Image for the project-->
-                    <div class="image">
-                        <img src="assets/notes.jpg" alt="Notes app">
-                    </div>
-                    <!--Show the links to the project page when hover-->
-                    <div class="hover-item">
-                        <p>Note app - React, TypeScript, NodeJS, PostpreSQL</p>
-                        <br>
-                        <p>Work in progress, more info soon</p>
-                        <!-- <div class="icon">
-                            <a href="https://sandrahkannerberg.github.io/snake_game/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
-                        </div> -->
                     </div>
                 </div>
 
@@ -243,16 +226,24 @@
                     </div>
                     <!--Show the links to the project page when hover-->
                     <div class="hover-item">
-                        <p>ToDo List - HTML, CSS, vanilla JavaScript and localStorage</p>
+                        <p>ToDo List - HTML, CSS, JavaScript and localStorage</p>
                         <br>
-                        <p>Please take a look, click on the icon below</p>
-                        <div class="icon">
-                            <a href="https://sandrahkannerberg.github.io/todo_app/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
+                        <div class="button-menu">
+                            <div class="icon">
+                                <a href="https://sandrahkannerberg.github.io/todo_app/" target="_blank">
+                                    <i class="fa-solid fa-globe"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://github.com/SandraHKannerberg/todo_app" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                
 
                 <div class="portfolio-item">
                     <!--Image for the project-->
@@ -261,52 +252,56 @@
                     </div>
                     <!--Show the links to the project page when hover-->
                     <div class="hover-item">
-                        <p>Digital diary - HTML, CSS, vanilla JavaScript and localStorage</p>
+                        <p>Digital diary - HTML, CSS, JavaScript and localStorage</p>
                         <br>
-                        <p>Please take a look, click on the icon below</p>
-                        <div class="icon">
-                            <a href="https://sandrahkannerberg.github.io/digital_diary/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
+                        <div class="button-menu">
+                            <div class="icon">
+                                <a href="https://sandrahkannerberg.github.io/digital_diary/" target="_blank">
+                                    <i class="fa-solid fa-globe"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://github.com/SandraHKannerberg/digital_diary" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- <div class="portfolio-item"> -->
                     <!--Image for the project-->
-                    <div class="image">
+                    <!-- <div class="image">
                         <img src="assets/digitalwatch.png" alt="Frontpage of digital watch">
-                    </div>
+                    </div> -->
                     <!--Show the links to the project page when hover-->
-                    <div class="hover-item">
-                        <p>Digital watch - HTML, CSS and vanilla JavaScript</p>
+                    <!-- <div class="hover-item">
+                        <p>Digital watch - HTML, CSS and JavaScript</p>
                         <br>
-                        <p>Please take a look, click on the icon below</p>
                         <div class="icon">
                             <a href="https://sandrahkannerberg.github.io/digital_watch/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="portfolio-item">
+                <!-- <div class="portfolio-item"> -->
                     <!--Image for the project-->
-                    <div class="image">
+                    <!-- <div class="image">
                         <img src="assets/snake.jpg" alt="Frontpage of Snake-Game">
-                    </div>
+                    </div> -->
                     <!--Show the links to the project page when hover-->
-                    <div class="hover-item">
-                        <p>Snake game - HTML, CSS and vanilla JavaScript. Desktop version</p>
+                    <!-- <div class="hover-item">
+                        <p>Snake game - HTML, CSS and JavaScript. Desktop version</p>
                         <br>
-                        <p>Please take a look, click on the icon below</p>
                         <div class="icon">
                             <a href="https://sandrahkannerberg.github.io/snake_game/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
 
                 <div class="portfolio-item">
                     <!--Image for the project-->
@@ -315,13 +310,19 @@
                     </div>
                     <!--Show the links to the project page when hover-->
                     <div class="hover-item">
-                        <p>Tic Tac Toe game - HTML, CSS and vanilla JavaScript.</p>
+                        <p>Tic Tac Toe game - HTML, CSS and JavaScript.</p>
                         <br>
-                        <p>Please take a look, click on the icon below</p>
-                        <div class="icon">
-                            <a href="https://sandrahkannerberg.github.io/tic-tac-toe-game/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
+                        <div class="button-menu">
+                            <div class="icon">
+                                <a href="https://sandrahkannerberg.github.io/tic-tac-toe-game/" target="_blank">
+                                    <i class="fa-solid fa-globe"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://github.com/SandraHKannerberg/tic-tac-toe-game" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -333,20 +334,26 @@
                     </div>
                     <!--Show the links to the project page when hover-->
                     <div class="hover-item">
-                        <p>Memory game - HTML, CSS and vanilla JavaScript.</p>
+                        <p>Memory game - HTML, CSS and JavaScript.</p>
                         <br>
-                        <p>Please take a look, click on the icon below</p>
-                        <div class="icon">
-                            <a href="https://sandrahkannerbergmemory.netlify.app/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
+                        <div class="button-menu">
+                            <div class="icon">
+                                <a href="https://sandrahkannerbergmemory.netlify.app/" target="_blank">
+                                    <i class="fa-solid fa-globe"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://github.com/SandraHKannerberg/memory" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <footer>Copyright &copy; Sandra Höst Kannerberg 2023</footer>
+            <footer>Copyright &copy; Sandra Höst Kannerberg 2024</footer>
 
         </section><!--this id is connect to the data-id for the controll with the same name-->
         
@@ -385,7 +392,7 @@
                         </div>
                     </div>
             </div>
-            <footer>Copyright &copy; Sandra Höst Kannerberg 2023</footer>
+            <footer>Copyright &copy; Sandra Höst Kannerberg 2024</footer>
         </section><!--this id is connect to the data-id for the controll with the same name-->
     </main>
 

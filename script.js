@@ -4,8 +4,10 @@ const sectBtn = document.querySelectorAll('.controll');//child
 const allSections = document.querySelector('.main-content');
 const home = document.querySelector("#home");
 const homeBtn = document.querySelector(".controll-1");
-const myVideo = document.getElementById("myVideo");
-const closeButton = document.querySelector(".close-button");
+const video = document.getElementById("myVideo");
+const closeButton = document.getElementById("closeButton");
+const secondVideo = document.getElementById("mySecondVideo");
+const closeSecondButton = document.getElementById("closeSecondButton");
 
 function init(){
     if(!localStorage.getItem('showSection')){
@@ -19,8 +21,12 @@ function init(){
         showButton.classList.add('active-btn');
     }
 
-    if (myVideo.style.display === "block") {
+    if (video.style.display === "block") {
         closeButton.style.display = "inline-block";
+    }
+
+    if (secondVideo.style.display === "block") {
+        closeSecondButton.style.display = "inline-block";
     }
 }
 
@@ -65,26 +71,50 @@ function pageTransitions(){
 
 pageTransitions();
 
-function toggleVideo() {
-  var video = document.getElementById("myVideo");
-  if (video.style.display === "none") {
-    video.style.display = "block";
-    video.play();
+video.onplay = function() {
     closeButton.style.display = "inline-block";
-  } else {
-    video.pause();
-  }
+};
+
+video.onpause = function() {
+    closeButton.style.display = "none";
+};
+
+function toggleVideo() {
+    if (video.style.display === "none") {
+        video.style.display = "block";
+        video.play();
+    } else {
+        video.pause();
+    }
 }
 
 function closeVideo() {
-  var video = document.getElementById("myVideo");
-  video.pause();
-  video.style.display = "none";
-  closeButton.style.display = "none";
+    video.pause();
+    video.style.display = "none";
+    closeButton.style.display = "none";
 }
 
-window.onload = function() {
-    if (myVideo.style.display === "block") {
-      closeButton.style.display = "inline-block";
-    }
+
+secondVideo.onplay = function() {
+    closeSecondButton.style.display = "inline-block";
 };
+
+secondVideo.onpause = function() {
+    closeSecondButton.style.display = "none";
+};
+
+function toggleSecondVideo() {
+    if (secondVideo.style.display === "none") {
+        secondVideo.style.display = "block";
+        secondVideo.play();
+    } else {
+        secondVideo.pause();
+    }
+}
+
+function closeSecondVideo() {
+    secondVideo.pause();
+    secondVideo.style.display = "none";
+    closeSecondButton.style.display = "none";
+}
+

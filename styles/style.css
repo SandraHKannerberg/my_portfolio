@@ -419,6 +419,11 @@ footer {
 .portfolios .portfolio-item .hover-item p {
   text-align: center;
 }
+.portfolios .portfolio-item .hover-item .button-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .portfolios .portfolio-item .hover-item .icon {
   display: flex;
   justify-content: center;
