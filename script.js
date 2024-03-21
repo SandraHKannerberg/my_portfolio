@@ -21,10 +21,6 @@ function init(){
         showButton.classList.add('active-btn');
     }
 
-    if (video.style.display === "block") {
-        closeButton.style.display = "inline-block";
-    }
-
     if (secondVideo.style.display === "block") {
         closeSecondButton.style.display = "inline-block";
     }
