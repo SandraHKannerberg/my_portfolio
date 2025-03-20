@@ -7,8 +7,8 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #FFA998;
-  --color-white: #FFFFFF;
+  --color-secondary: #ffa998;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -18,7 +18,7 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3) ;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -26,7 +26,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
-  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
